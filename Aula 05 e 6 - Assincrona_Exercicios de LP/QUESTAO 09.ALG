@@ -1,16 +1,20 @@
 algoritmo "QUESTAO 09"
-
 var
 
-idade, ano, meses, dias: inteiro
-
+salarioAtual, percentual, salarioNovo, aumento : real
 
 inicio
 
-ano:= 365
-meses:= 30
+escreval("Digite o Salário Atual: ")
+leia(salarioAtual)
 
-escreva("Escreva quantos anos vocês
+Escreval("Digite o percentual de aumento")
+leia(percentual)
 
+aumento := (salarioAtual / 100) + percentual
+salarioNovo := salarioAtual + aumento
+
+escreval("Aumento de ", aumento)
+escreval("Novo salário: ", salarioNovo)
 
 fimalgoritmo
