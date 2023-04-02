@@ -5,22 +5,22 @@ algoritmo "QUESTAO 91"
 
 var
   VET: vetor[1..50] de inteiro
-  i, j: inteiro
+  a, b: inteiro
   repetidos: logico
 
 inicio
   // Leitura dos números e armazenamento no vetor
-  para i de 1 ate 50 faca
-    escreva("Digite o ", i, "o numero: ")
-    leia(VET[i])
+  para a de 1 ate 50 faca
+    escreva("Digite o ", a, "º  numero: ")
+    leia(VET[a])
   fimpara
 
   // Verificação de números repetidos
   repetidos <- falso
-  para i de 1 ate 49 faca
-    para j de i + 1 ate 50 faca
-      se VET[i] = VET[j] entao
-        escreval("Numero repetido: ", VET[i], " nas posicoes ", i, " e ", j)
+  para a de 1 ate 49 faca
+    para b de a + 1 ate 50 faca
+      se VET[a] = VET[b] entao
+        escreval("Numero repetido: ", VET[a], "    nas posicoes ", a, "ª e ", b, "ª")
         repetidos <- verdadeiro
       fimse
     fimpara
